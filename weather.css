@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("nature.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: all 1.4s ease;
+}
+
+.box{
+    background-color: black;
+    opacity: 0.85;
+    color: white;
+    width: 90%;
+    max-width: 420px;
+    border-radius: 30px;
+    padding: 40px;
+    transition: all 1.4s ease;
+
+}
+.searchButton{
+    border-radius: 50%;
+    padding: 6px;
+    width: 45px;
+    cursor: pointer;
+    color: inherit;
+    outline: none;
+    border: none;
+    transition: all 1.4s ease;
+    background-color: rgb(43, 41, 41);
+}
+.searchButton:hover{
+    background-color: rgb(75, 72, 72);
+}
+.searchBar{
+    width: 90%;
+    height: 45px;
+    border-radius: 22px;
+    padding: 20px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    background-color: rgb(43, 41, 41);
+    color: inherit;
+    transition: all 1.4s ease;
+}
+.searchBox{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 25px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.changeColor{
+    width: 40px;
+    height: 17px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+.circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    background-color: rgb(9, 9, 177);
+}
+body.darkmode{
+    background-image: url("natureNight.jpg");
+}
+.circle.darkmode{
+    background-color: rgb(209, 209, 21);
+    transform: translateX(25px);
+}
+.searchBar.lightmode{
+    background-color: white; 
+    color: black; 
+    border: 2px solid black;
+}
+.searchButton.lightmode{
+    background-color: white; 
+    color: black; 
+    border: 1px solid black;
+}
+.searchButton.lightmode:hover{
+    background-color: aqua;
+}
+.lightmode{
+    background-color: white;
+    color: black;
+}
